@@ -4,7 +4,7 @@ var template = {
     <!doctype html>
       <html>
       <head>
-        <title>WEB222233 - ${title}</title>
+        <title>WEB23333 - ${title}</title>
         <meta charset="utf-8">
       </head>
       <body>
@@ -18,11 +18,11 @@ var template = {
 
     `;
   },
-  list: function (filelist) {
+  list: function (topics) {
     var list = "<ul>";
     var i = 0;
-    while (i < filelist.length) {
-      list = list + `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`;
+    while (i < topics.length) {
+      list = list + `<li><a href="/?id=${topics[i].id}">${topics[i].title}</a></li>`;
       i += 1;
     }
     list = list + "</ul>";
